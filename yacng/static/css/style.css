@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+  }
+
+  header {
+    background-color: #1F2833;
+    height: 35px;
+    width: 100%;
+    opacity: .9;
+    margin-bottom: 10px;
+    box-shadow: 0px 0.5px 5px black;
+  }
+  
+  header h1.logo {
+    margin: 0;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+  }
+  
+  header h1.logo:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content {
+    position: relative;
+    text-align: center;
+  }
+
+  .body {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    max-width: 50%;
+  }
+
+  #container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #444;
+    color: #444;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    top: 20px;
+    position: relative;
+    text-align: center;
+  }
+
+  .button a {
+      color: #444;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+  #button-3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-3 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    font-weight: bold;
+  }
+  
+  #circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #444;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+  }
+  
+  #button-3:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+  }
+  
+  #button-3:hover a {
+    color: #E6E6FA;
+  }
+
+
+  div.home {
+    padding: 10px 0 30px 0;
+    background-color: #E6E6FA;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+  
+  div.about {
+    padding: 10px 0 30px 0;
+    background-color: #E6E6FA;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+  
+  h2 {
+    font-size: 3em;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+  
+  h3 {
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #999;
+  }
+  
+  .menu {
+    float: right;
+    margin-top: 8px;
+  }
+  
+  .menu li {
+    display: inline;
+  }
+  
+  .menu li + li {
+    margin-left: 35px;
+  }
+  
+  .menu li a {
+    color: #444;
+    text-decoration: none;
+  }
+
+  .codename {
+    position: relative;
+    text-align: center;
+  }
+
+  .codename p {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}

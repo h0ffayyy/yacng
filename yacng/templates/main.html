@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YACNG</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/js/generate_codename.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">YACNG</h1>
+        <strong><nav>
+          <ul class="menu">
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to Yet Another Code Name Generator!</h1>
+            <p class="content body">You've probably seen and used other code name generators. This one isn't any different. Use it to generate code names for projects, incidents, whatever you want!</p>
+        </div>
+        <div id="container">
+          <div class="button" id="button-3">
+            <div id="circle"></div>
+            <a href="#" id="generate">Generate</a>
+          </div>
+        </div>
+        <div id="container">
+          <div class="codename">
+            <p id="codename-text">Code name shows up here!</p>
+          </div>
+        </div>
+    </div>
+  </body>
+  <footer>
+    {% block content -%}
+    {% include "partials/footer.html" %}
+    {%- endblock content %}
+  </footer>
+</html>
