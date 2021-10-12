@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import jsonify
 import random
+import os
 
 app = Flask(__name__)
 
@@ -11,8 +12,15 @@ def main():
 
 @app.route('/generate_codename')
 def generate_codename():
-    file1 = "static/wordlists/city_names.txt"
+    wordlist_dir = "static/wordlists/"
+    wordlists = []
 
-    lines = open(file1).read().splitlines()
-    line =random.choice(lines)
+    for filename in os.listdir(wordlist_dir):
+        wordlists.append(filename)
+
+    wordlist = random.choice(wordlists)
+
+    lines = open(wordlist_dir+wordlist).read().splitlines()
+    line = random.choice(lines)
+
     return jsonify({'codename' : line})
